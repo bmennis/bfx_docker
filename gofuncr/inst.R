@@ -1,5 +1,4 @@
 source('https://bioconductor.org/biocLite.R')
 biocLite('GOfuncR')
 install.packages('tidyverse')
-install.packages('data.table')
 q()
