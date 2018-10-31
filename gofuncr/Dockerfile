@@ -8,7 +8,7 @@ RUN apt-get update \
     && sudo apt-get install libxml2-dev -y \
     && sudo apt-get install curl
 
-RUN curl http://raw.githubusercontent.com/bmennis/bfx_docker/master/gofuncr/inst.R -o ./inst.R
+COPY https://raw.githubusercontent.com/bmennis/bfx_docker/master/gofuncr/inst.R ./inst.R
 
 #RUN R --vanilla << "source('https://bioconductor.org/biocLite.R'); biocLite('GOfuncR'); q();"
 RUN Rscript inst.R
