@@ -1,5 +1,6 @@
 FROM rocker/r-base
-COPY bmennis/bfx_docker/gofuncr/inst.R ./
+
+RUN curl https://github.com/bmennis/bfx_docker/gofuncr/inst.R ./
 
 RUN apt-get update \
     && apt-get install -y \
