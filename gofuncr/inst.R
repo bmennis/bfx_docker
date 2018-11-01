@@ -1,6 +1,6 @@
 install.packages('tidyverse')
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install("GOfuncR", version = "3.8")
-BiocManager::install("Mus.musculus", version = "3.8")
+BiocManager::install("GOfuncR", version = "3.7")
+BiocManager::install("Mus.musculus", version = "3.7")
 q()
