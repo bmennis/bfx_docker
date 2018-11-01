@@ -1,4 +1,4 @@
-#install.packages('tidyverse')
+install.packages('tidyverse')
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager", version = '3.7')
 BiocManager::install(version = '3.7', ask = FALSE)
