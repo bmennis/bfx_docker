@@ -1,7 +1,6 @@
-source('https://bioconductor.org/biocLite.R')
-biocLite('GOfuncR')
 install.packages('tidyverse')
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
+BiocManager::install("GOfuncR", version = "3.8")
 BiocManager::install("Mus.musculus", version = "3.8")
 q()
