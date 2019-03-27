@@ -11,7 +11,6 @@ mv /samtools-${SAMTOOLS_VERSION}/samtools /bin/; \
 cd htslib-${HTSLIB_VERSION}/ && ./configure && make; \
 mv htsfile libhts.so* tabix bgzip /bin; \
 rm -rf /samtools*; \
-
 apt clean build-essential zlib1g-dev wget && apt -y  autoclean && apt -y autoremove
 
 RUN apt update \
