@@ -21,6 +21,7 @@ RUN apt update \
   && apt remove --purge --yes \
     make \
     g++ \
+  && apt autoremove --purge --yes
 
 RUN apt update && apt install -y wget build-essential zlib1g-dev libncurses5-dev libbz2-dev liblzma-dev libcurl4-openssl-dev; \
 wget -q https://github.com/samtools/samtools/releases/download/${SAMTOOLS_VERSION}/samtools-${SAMTOOLS_VERSION}.tar.bz2; \
